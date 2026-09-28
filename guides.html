@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инструкции — Desktop Animal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🐾</span>
+                <span class="logo-text">Desktop Animal</span>
+            </a>
+            <nav class="main-nav">
+                <a href="index.html#pets">Животные</a>
+                <a href="guides.html">Инструкции</a>
+                <a href="index.html#about">О проекте</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" style="padding: 50px 0 30px;">
+            <div class="container">
+                <h1>Инструкции по настройке</h1>
+                <p class="hero-subtitle">Как запускать и персонализировать каждого питомца.<br>Всегда делай резервную копию папки перед изменениями.</p>
+            </div>
+        </section>
+
+        <section class="pets-section" style="padding-top: 20px;">
+            <div class="container">
+
+                <div class="guide-block" id="goose">
+                    <h2>🦢 Desktop Goose</h2>
+                    <p class="tag">Официальный источник: samperson.itch.io/desktop-goose</p>
+
+                    <h3>Как запустить</h3>
+                    <ol>
+                        <li>Скачай ZIP с официальной страницы itch.io.</li>
+                        <li>Распакуй папку в любое удобное место.</li>
+                        <li>Запусти <code>GooseDesktop.exe</code> (Windows) или приложение (macOS).</li>
+                        <li>Чтобы выйти — зажми клавишу <strong>Esc</strong> на несколько секунд.</li>
+                    </ol>
+
+                    <h3>Как поменять мемы и картинки</h3>
+                    <ol>
+                        <li>Полностью закрой гуся.</li>
+                        <li>Открой папку → перейди в <code>Assets/Images/Memes</code>.</li>
+                        <li>Удали ненужные изображения.</li>
+                        <li>Положи свои PNG / JPG / GIF файлы в эту папку.</li>
+                        <li>Запусти гуся заново — он будет использовать твои картинки.</li>
+                    </ol>
+
+                    <h3>Как поменять тексты в блокноте</h3>
+                    <ol>
+                        <li>Перейди в <code>Assets/Text/NotepadMessages</code>.</li>
+                        <li>Каждый .txt файл — это одно сообщение, которое гусь может показать.</li>
+                        <li>Отредактируй существующие файлы или создай новые .txt со своими текстами.</li>
+                        <li>Сохрани и перезапусти гуся.</li>
+                    </ol>
+
+                    <h3>Как изменить поведение и цвета (config.ini)</h3>
+                    <p>Открой файл <code>config.ini</code> блокнотом. Полезные параметры:</p>
+                    <pre>SilenceSounds=True          # отключить звуки
+Task_CanAttackMouse=False   # запретить воровать курсор
+AttackRandomly=True         # случайные атаки
+EnableMods=True             # включить моды
+UseCustomColors=True
+GooseDefaultWhite=#ffffff
+GooseDefaultOrange=#ffa500
+GooseDefaultOutline=#d3d3d3
+MinWanderingTimeSeconds=20
+MaxWanderingTimeSeconds=40</pre>
+                    <p>После изменений сохрани файл и перезапусти программу.</p>
+
+                    <div class="warning">
+                        Важно: не распространяй изменённые версии Desktop Goose как свою работу. Оригинальный создатель — samperson. Поддержи его на itch.io.
+                    </div>
+                </div>
+
+                <div class="guide-block" id="duck">
+                    <h2>🦆 Desktop Duck</h2>
+                    <p class="tag">Фанатская версия Desktop Goose от Darquenn</p>
+
+                    <h3>Как запустить</h3>
+                    <ol>
+                        <li>Скачай с официальной страницы itch.io.</li>
+                        <li>Распакуй и запусти исполняемый файл.</li>
+                        <li>Выход такой же, как у гуся — зажать Esc.</li>
+                    </ol>
+
+                    <h3>Настройка</h3>
+                    <p>Структура почти идентична Desktop Goose. Ищи папки с картинками и текстами и заменяй их своими файлами. Всегда закрывай программу перед редактированием.</p>
+                </div>
+
+                <div class="guide-block" id="sheep">
+                    <h2>🐑 eSheep / Desktop Pet</h2>
+                    <p class="tag">Открытая переработка классики 1995 года</p>
+
+                    <h3>Как запустить</h3>
+                    <ol>
+                        <li>Скачай портативный EXE или установи из Microsoft Store.</li>
+                        <li>Запусти — овца появится на рабочем столе.</li>
+                        <li>Правый клик по иконке в трее — добавить ещё овец, сменить питомца.</li>
+                    </ol>
+
+                    <h3>Как создать своё животное</h3>
+                    <p>Через XML + спрайт-лист. Подробности и редактор: <a href="https://adrianotiger.github.io/desktopPet/" target="_blank" style="color:var(--accent)">adrianotiger.github.io/desktopPet</a></p>
+                </div>
+
+                <div class="guide-block" style="border-color: var(--accent);">
+                    <h2>Общие советы</h2>
+                    <ul>
+                        <li>Скачивай только с официальных ссылок.</li>
+                        <li>Делай резервную копию перед изменениями.</li>
+                        <li>Закрывай питомца перед редактированием файлов.</li>
+                        <li>Уважай оригинальных авторов.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <span class="logo-icon">🐾</span> Desktop Animal
+                </div>
+                <p>Кураторский сборник десктопных животных. Поддерживайте оригинальных авторов.</p>
+                <p class="copyright">© 2026 Desktop Animal. Все оригинальные программы принадлежат их авторам.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
